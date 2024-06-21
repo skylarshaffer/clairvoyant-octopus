@@ -1,0 +1,17 @@
+endpoints.txt
+input.txt
+
+*.txt
+*.jsonl
+testers
+!test/**/input.txt
+!internal/utils/assets/wordlist.txt
+
+# ignore builds
+/goctopus
+
+dist/
+.env
+
+# root go files (often used for testing / prototyping)
+/*.go
