@@ -1,0 +1,6 @@
+[submodule "clairvoyance"]
+	path = clairvoyance
+	url = https://github.com/nikitastupin/clairvoyance
+[submodule "goctopus"]
+	path = goctopus
+	url = https://github.com/Escape-Technologies/goctopus
