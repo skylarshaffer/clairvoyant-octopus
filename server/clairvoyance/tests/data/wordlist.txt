@@ -1,4 +1,0 @@
-setNameFor
-input
-home
-devic
