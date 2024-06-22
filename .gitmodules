@@ -1,12 +1,3 @@
-[submodule "clairvoyance"]
-	path = clairvoyance
-	url = https://github.com/nikitastupin/clairvoyance
-[submodule "goctopus"]
-	path = goctopus
-	url = https://github.com/Escape-Technologies/goctopus
 [submodule "server/clairvoyance"]
 	path = server/clairvoyance
 	url = https://github.com/nikitastupin/clairvoyance
-[submodule "server/goctopus"]
-	path = server/goctopus
-	url = https://github.com/Escape-Technologies/goctopus
