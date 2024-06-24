@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars -- Remove when used */
 import 'dotenv/config';
-import express from 'express';
+import express, { response } from 'express';
 import pg from 'pg';
 import { ClientError, errorMiddleware } from './lib/index.js';
+import { spawn } from 'child_process';
 
 const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
@@ -24,6 +25,37 @@ app.use(express.json());
 
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hello, World!' });
+});
+
+/* app.post('/api/goctopus/:domain', async (req, res) => {
+  const domain = req.params.domain
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('Transfer-Encoding', 'chunked')
+  res.write("Thinking...")
+  await goctopus(res)
+  console.log('done')
+}); */
+
+app.post('/api/goctopus/:domain', (req, res) => {
+  const domain = 'shawnkost.dev';
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('Transfer-Encoding', 'chunked');
+
+  const endpointList = spawn('goctopus', ['-a', `${domain}`]);
+
+  endpointList.stdout.on('data', function (data: Buffer) {
+    res.write('testout');
+    console.log(data.toString());
+  });
+
+  endpointList.stderr.on('data', function (data: Buffer) {
+    res.write('testerr');
+    console.log(data.toString());
+  });
+  endpointList.on('close', () => {
+    console.log('end');
+    res.end();
+  });
 });
 
 /*
