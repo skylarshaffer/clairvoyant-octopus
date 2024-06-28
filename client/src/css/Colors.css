@@ -1,0 +1,174 @@
+:root {
+  --lego-color-1: #FFF; /* White */
+  --lego-color-2: #EED9A4; /* Tan */
+  --lego-color-3: #FFE001; /* Yellow */
+  --lego-color-4: #FF7E14; /* Orange */
+  --lego-color-5: #B30006; /* Red */
+  --lego-color-6: #00923D; /* Green */
+  --lego-color-7: #0057A6; /* Blue */
+  --lego-color-8: #6B3F22; /* Brown (2006) */
+  --lego-color-9: #9C9C9C; /* Light Gray (2008) */
+  --lego-color-10: #6B5A5A; /* Dark Gray (2006) */
+  --lego-color-11: #212121; /* Black */
+  --lego-color-12: #EEE; /* Trans-Clear */
+  --lego-color-13: #939484; /* Trans-Brown (Old Trans-Black) */
+  --lego-color-14: #00296B; /* Trans-Dark Blue */
+  --lego-color-15: #68BCC5; /* Trans-Light Blue */
+  --lego-color-16: #C0F500; /* Trans-Neon Green */
+  --lego-color-17: #9C0010; /* Trans-Red */
+  --lego-color-18: #FF4231; /* Trans-Neon Orange */
+  --lego-color-19: #EBF72D; /* Trans-Yellow */
+  --lego-color-20: #217625; /* Trans-Green */
+  --lego-color-21: #f1f2e1; /* Chrome Gold */
+  --lego-color-22: #DCDCDC; /* Chrome Silver */
+  --lego-color-23: #F5CDD6; /* Pink (2005) */
+  --lego-color-24: #7A238D; /* Purple (2006) */
+  --lego-color-25: #FF7D5D; /* Salmon (1999) */
+  --lego-color-26: #FCC7B7; /* Light Salmon (2002) */
+  --lego-color-27: #B24817; /* Rust (2005) */
+  --lego-color-28: #FFAF7D; /* Nougat */
+  --lego-color-29: #E6881D; /* Earth Orange (2005) */
+  --lego-color-31: #FFA531; /* Medium Orange (2007) */
+  --lego-color-32: #FFBC36; /* Light Orange (2004) */
+  --lego-color-33: #FEE89F; /* Light Yellow (2005) */
+  --lego-color-34: #C4E000; /* Lime */
+  --lego-color-35: #ECEEBD; /* Light Lime (2007) */
+  --lego-color-36: #10CB31; /* Bright Green */
+  --lego-color-37: #91DF8C; /* Medium Green (2004) */
+  --lego-color-38: #D7EED1; /* Light Green (2005) */
+  --lego-color-39: #00A29F; /* Dark Turquoise */
+  --lego-color-40: #00C5BC; /* Light Turquoise (2004) */
+  --lego-color-41: #BCE5DC; /* Aqua (2006) */
+  --lego-color-42: #82ADD8; /* Medium Blue */
+  --lego-color-43: #3448A4; /* Violet (2005) */
+  --lego-color-44: #C9CAE2; /* Light Violet (2002) */
+  --lego-color-46: #d4d5c9; /* Glow In Dark Opaque (2011) */
+  --lego-color-47: #EF5BB3; /* Dark Pink */
+  --lego-color-48: #A2BFA3; /* Sand Green */
+  --lego-color-49: #E8E8E8; /* Very Light Gray (2004) */
+  --lego-color-50: #CE1d9b; /* Trans-Dark Pink */
+  --lego-color-51: #5525B7; /* Trans-Purple */
+  --lego-color-52: #5C66A4; /* Chrome Blue (2006) */
+  --lego-color-54: #B57DA5; /* Sand Purple (2002) */
+  --lego-color-55: #8899AB; /* Sand Blue */
+  --lego-color-56: #F2D3D1; /* Light Pink (2007) */
+  --lego-color-57: #645a4c; /* Chrome Antique Brass (2005) */
+  --lego-color-58: #C58D80; /* Sand Red (2004) */
+  --lego-color-59: #6A0E15; /* Dark Red */
+  --lego-color-60: #d4d3dd; /* Milky White (2008) */
+  --lego-color-61: #E7AE5A; /* Pearl Light Gold (2005) */
+  --lego-color-62: #C8D9E1; /* Light Blue (2007) */
+  --lego-color-63: #243757; /* Dark Blue */
+  --lego-color-64: #3CB371; /* Chrome Green (1999) */
+  --lego-color-65: #B8860B; /* Metallic Gold */
+  --lego-color-66: #ACB7C0; /* Pearl Light Gray (2011) */
+  --lego-color-67: #C0C0C0; /* Metallic Silver */
+  --lego-color-68: #B35408; /* Dark Orange */
+  --lego-color-69: #B89869; /* Dark Tan */
+  --lego-color-70: #bdb573; /* Metallic Green (2003) */
+  --lego-color-71: #B72276; /* Magenta */
+  --lego-color-72: #7DC1D8; /* Maersk Blue (2011) */
+  --lego-color-73: #9391E4; /* Medium Violet (2004) */
+  --lego-color-74: #76A3C8; /* Trans-Medium Blue (2018) */
+  --lego-color-76: #DFE000; /* Medium Lime (2005) */
+  --lego-color-77: #666660; /* Pearl Dark Gray */
+  --lego-color-78: #868FAA; /* Pearl Sand Blue (2005) */
+  --lego-color-80: #2E5543; /* Dark Green */
+  --lego-color-81: #AD7118; /* Flat Dark Gold (2006) */
+  --lego-color-82: #aa4d8e; /* Chrome Pink (2007) */
+  --lego-color-83: #FFF; /* Pearl White (2006) */
+  --lego-color-84: #AC6D52; /* Copper (2008) */
+  --lego-color-85: #595D60; /* Dark Bluish Gray */
+  --lego-color-86: #AFB5C7; /* Light Bluish Gray */
+  --lego-color-87: #8AD4E1; /* Sky Blue (2007) */
+  --lego-color-88: #82422A; /* Reddish Brown */
+  --lego-color-89: #5F2683; /* Dark Purple */
+  --lego-color-90: #FECCB0; /* Light Nougat */
+  --lego-color-91: #99663E; /* Light Brown (2006) */
+  --lego-color-93: #AF3195; /* Light Purple (2006) */
+  --lego-color-94: #F785B1; /* Medium Dark Pink (1993) */
+  --lego-color-95: #8D949C; /* Flat Silver */
+  --lego-color-96: #FFDCA4; /* Very Light Orange (2000) */
+  --lego-color-97: #506CEF; /* Blue-Violet (2005) */
+  --lego-color-98: #E96F01; /* Trans-Orange */
+  --lego-color-99: #E4E8E8; /* Very Light Bluish Gray (2013) */
+  --lego-color-100: #CE1d9b; /* Glitter Trans-Dark Pink */
+  --lego-color-101: #b2adaa; /* Glitter Trans-Clear */
+  --lego-color-102: #3A2B82; /* Glitter Trans-Purple */
+  --lego-color-103: #FFF08C; /* Bright Light Yellow */
+  --lego-color-104: #F7BCDA; /* Bright Pink */
+  --lego-color-105: #BCD1ED; /* Bright Light Blue */
+  --lego-color-106: #B3694E; /* Fabuland Brown (1991) */
+  --lego-color-107: #FF8298; /* Trans-Pink (2006) */
+  --lego-color-108: #10Cb31; /* Trans-Bright Green */
+  --lego-color-109: #2032B0; /* Dark Blue-Violet (2006) */
+  --lego-color-110: #FFC700; /* Bright Light Orange */
+  --lego-color-111: #7C7E7C; /* Speckle Black-Silver (2013) */
+  --lego-color-113: #B7C8BF; /* Trans-Aqua (2006) */
+  --lego-color-114: #B97AB1; /* Trans-Light Purple (2006) */
+  --lego-color-115: #E79E1D; /* Pearl Gold */
+  --lego-color-116: #5F4E47; /* Speckle Black-Copper (2006) */
+  --lego-color-117: #4A6363; /* Speckle DBGray-Silver (2006) */
+  --lego-color-118: #bdc6ad; /* Glow In Dark Trans (2011) */
+  --lego-color-119: #D4D2CD; /* Pearl Very Light Gray (2004) */
+  --lego-color-120: #50372F; /* Dark Brown */
+  --lego-color-121: #FFD700; /* Trans-Neon Yellow (2006) */
+  --lego-color-122: #544E4F; /* Chrome Black (2009) */
+  --lego-color-150: #E3A05B; /* Medium Nougat */
+  --lego-color-151: #AB9421; /* Speckle Black-Gold (2011) */
+  --lego-color-152: #CFEFEA; /* Light Aqua */
+  --lego-color-153: #009FE0; /* Dark Azure */
+  --lego-color-154: #D3BDE3; /* Lavender */
+  --lego-color-155: #ABA953; /* Olive Green */
+  --lego-color-156: #6ACEE0; /* Medium Azure */
+  --lego-color-157: #C689D9; /* Medium Lavender */
+  --lego-color-158: #E7F2A7; /* Yellowish Green */
+  --lego-color-159: #d9d9d9; /* Glow In Dark White */
+  --lego-color-160: #EF9121; /* Fabuland Orange (1987) */
+  --lego-color-161: #DD982E; /* Dark Yellow (2005) */
+  --lego-color-162: #68BCC5; /* Glitter Trans-Light Blue */
+  --lego-color-163: #C0F500; /* Glitter Trans-Neon Green (2018) */
+  --lego-color-164: #E99A3A; /* Trans-Light Orange (2006) */
+  --lego-color-165: #FA5947; /* Neon Orange */
+  --lego-color-166: #DBF355; /* Neon Green */
+  --lego-color-167: #F50; /* Reddish Orange */
+  --lego-color-168: #735442; /* Umber */
+  --lego-color-169: #EA8339; /* Sienna */
+  --lego-color-170: #EBF72D; /* Satin Trans-Yellow */
+  --lego-color-220: #FF8172; /* Coral */
+  --lego-color-221: #94E5AB; /* Trans-Light Green (2006) */
+  --lego-color-222: #D04010; /* Glitter Trans-Orange (2020) */
+  --lego-color-223: #68BCC5; /* Satin Trans-Light Blue */
+  --lego-color-224: #CE1d9b; /* Satin Trans-Dark Pink */
+  --lego-color-225: #CE7942; /* Dark Nougat (2004) */
+  --lego-color-226: #71EB54; /* Trans-Light Bright Green (2006) */
+  --lego-color-227: #E0AAD9; /* Clikits Lavender (2005) */
+  --lego-color-228: #FFF; /* Satin Trans-Clear */
+  --lego-color-229: #939484; /* Satin Trans-Brown */
+  --lego-color-230: #8320B7; /* Satin Trans-Purple */
+  --lego-color-231: #FF6326; /* Dark Salmon (2003) */
+  --lego-color-232: #1552e2; /* Satin Trans-Dark Blue */
+  --lego-color-233: #7fe15b; /* Satin Trans-Bright Green */
+  --lego-color-234: #9C41B6; /* Trans-Medium Purple (2006) */
+  --lego-color-235: #E7891B; /* Reddish Gold (2005) */
+  --lego-color-236: #FFFC00; /* Neon Yellow */
+  --lego-color-237: #985750; /* Bionicle Copper (2001) */
+  --lego-color-238: #B9752F; /* Bionicle Gold (2002) */
+  --lego-color-239: #A59287; /* Bionicle Silver (2002) */
+  --lego-color-240: #A16C42; /* Medium Brown */
+  --lego-color-241: #FBC685; /* Medium Tan */
+  --lego-color-242: #76753F; /* Dark Olive Green */
+  --lego-color-243: #B5A1BA; /* Pearl Sand Purple */
+  --lego-color-244: #282725; /* Pearl Black (2006) */
+  --lego-color-245: #7862CE; /* Lilac (2005) */
+  --lego-color-246: #CDCCEE; /* Light Lilac (2004) */
+  --lego-color-247: #5DBFE4; /* Little Robots Blue (2004) */
+  --lego-color-248: #ADD237; /* Fabuland Lime (1986) */
+  --lego-color-249: #D06926; /* Reddish Copper (2020) */
+  --lego-color-250: #C58259; /* Metallic Copper (2012) */
+  --lego-color-251: #777; /* Trans-Black */
+  --lego-color-252: #E54952; /* Pearl Red (2006) */
+  --lego-color-253: #13A452; /* Pearl Green (2006) */
+  --lego-color-254: #3977C7; /* Pearl Blue (2009) */
+  --lego-color-255: #815542; /* Pearl Brown (2006) */
+}

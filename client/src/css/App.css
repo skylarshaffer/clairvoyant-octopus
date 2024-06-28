@@ -1,0 +1,110 @@
+:root {
+  --palette-trans-clear: var(--lego-color-12);
+  --palette-white: var(--lego-color-1);
+  --palette-black: var(--lego-color-11);
+  --palette-dark-azure: var(--lego-color-153);
+  --palette-light-pink: var(--lego-color-104);
+  --palette-dark-pink: var(--lego-color-47);
+  --palette-yellowish-green: var(--lego-color-158);
+  --palette-yellow: var(--lego-color-3);
+  --palette-overlay-black: rgba(33, 33, 33, 0.4);
+  --palette-border-white: rgba(255, 255, 255, 0.2);
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-lexend: lexend, sans-serif;
+  --font-sofia-sans: 'Sofia Sans Extra Condensed', sans-serif;
+  --main-bg-color: var(--palette-trans-clear);
+  --text-color: var(--palette-black);
+  --logo-color: var(--palette-white);
+  --header-color: var(--palette-dark-azure);
+  --button-text-color: var(--palette-pure-white);
+  --overlay-color: var(--palette-overlay-black);
+  --global-shadow: rgba(33, 33, 33, 0.4) -3.5rem 0 1rem -3rem inset,
+  rgba(33, 33, 33, 0.2) 3rem 0 .5rem -3rem inset,
+  rgba(33, 33, 33, 0.1) 0 -1rem .25rem -1.1rem inset,
+  rgba(255, 255, 255, 0.5) 0 1rem .25rem -1.1rem inset;
+}
+
+span.siftarm {
+  display:flex;
+  height: 3rem;
+  position: relative;
+  width: fit-content;
+
+  h4 {
+    position: relative;
+    display: inline;
+    color: var(--palette-black);
+    margin: .5rem;;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: var(--font-lexend);
+    font-weight:normal;
+  }
+
+  span {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+    height: 3rem;
+    min-width: 6rem;
+    max-width: 33rem;
+    width: calc((round(up, 100% - 3rem, 6rem) + 3rem));
+    box-shadow: var(--global-shadow);
+    border-radius: calc(1rem/16);
+    background-color: var(--palette-yellow);
+  }
+
+}
+
+#root > span {
+  display: block;
+  position:fixed;
+  z-index: -1;
+  height: 3.5rem;
+  width: 100%;
+  background-color: var(--palette-dark-azure);
+}
+
+header {
+  background-color: var(--header-color);
+  height: 3.5rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: var(--font-lexend);
+    font-weight:normal;
+    margin:0
+  }
+}
+
+
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 1rem;
+}
+
+section {
+  flex: 1 1 0;
+  flex-flow: column nowrap;
+
+  table {
+    * th {
+      text-align: left;
+    }
+  }
+}

@@ -36,20 +36,26 @@ app.get('/api/hello', (req, res) => {
   console.log('done')
 }); */
 
-app.post('/api/goctopus/:domain', (req, res) => {
+app.get('/api/goctopus', (req, res) => {
+  res.send('okay')
+});
+
+app.get('/api/goctopus/:domain', (req, res) => {
   const domain = 'shawnkost.dev';
-  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Transfer-Encoding', 'chunked');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Content-Encoding', 'none');
 
   const endpointList = spawn('goctopus', ['-a', `${domain}`]);
 
   endpointList.stdout.on('data', function (data: Buffer) {
-    res.write('testout');
+    res.write('starting');
     console.log(data.toString());
   });
 
   endpointList.stderr.on('data', function (data: Buffer) {
-    res.write('testerr');
+    res.write(data.toString());
     console.log(data.toString());
   });
   endpointList.on('close', () => {
