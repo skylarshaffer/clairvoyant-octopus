@@ -64,6 +64,31 @@ app.get('/api/goctopus/:domain', (req, res) => {
   });
 });
 
+app.get('/api/clairvoyance/:domain', (req, res) => {
+  const domain = req.params.domain;
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Content-Encoding', 'none');
+  const endpointList = spawn('clairvoyance', [`${domain}`]);
+
+  endpointList.stdout.on('data', function (data: Buffer) {
+    res.write(`data: ${data.toString()}\n`);
+    console.log(data.toString());
+  });
+
+  endpointList.stderr.on('data', function (data: Buffer) {
+    res.write(`data: ${data.toString()}\n`);
+    console.log(data.toString());
+  });
+
+  endpointList.on('exit', () => {
+    console.log('end');
+    res.send();
+    res.end();
+  });
+});
+
 /*
  * Handles paths that aren't handled by any other route handler.
  * It responds with `index.html` to support page refreshes with React Router.
