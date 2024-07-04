@@ -1,20 +1,20 @@
 import { CrawlResults } from './CrawlResults';
 
 type Props = {
-  endpoints: string[];
+  closedEndpoints: string[];
+  openEndpoints: string[];
 };
 
-export function Endpoints({ endpoints }: Props) {
+export function Endpoints({ closedEndpoints, openEndpoints }: Props) {
   return (
     <>
       <section>
-        <ul>
-          {endpoints.map((endpoint) => (
-            <li>{endpoint}</li>
-          ))}
-        </ul>
+        <h2>Discovered Endpoints</h2>
+        <CrawlResults
+          closedEndpoints={closedEndpoints}
+          openEndpoints={openEndpoints}
+        />
       </section>
-      <CrawlResults endpoints={endpoints} />
     </>
   );
 }

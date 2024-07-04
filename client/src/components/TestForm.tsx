@@ -1,14 +1,14 @@
-import { FormEvent } from "react";
+import { FormEvent } from 'react';
 
 type Props = {
-  onSubmit: (event: FormEvent<HTMLFormElement>) => void
-}
+  onSubmit: (event: FormEvent<HTMLFormElement>) => void;
+};
 
-export function TestForm({onSubmit}: Props) {
+export function TestForm({ onSubmit }: Props) {
   return (
     <section>
-      <form id='test-form' onSubmit={onSubmit}>
-        <label>URL<input name='domain' type='text'></input></label>
+      <form id="test-form" onSubmit={onSubmit}>
+        <input name="domain" placeholder="URL" type="text"></input>
         <button>TEST</button>
       </form>
     </section>

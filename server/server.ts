@@ -64,25 +64,25 @@ app.get('/api/goctopus/:domain', (req, res) => {
   });
 });
 
-app.get('/api/clairvoyance/:domain', (req, res) => {
-  const domain = req.params.domain;
+app.get('/api/clairvoyance/:endpoint(*)', (req, res) => {
+  const endpoint = req.params.endpoint;
   res.setHeader('Cache-Control', 'no-cache');
   res.setHeader('Content-Type', 'text/event-stream');
   res.setHeader('Connection', 'keep-alive');
   res.setHeader('Content-Encoding', 'none');
-  const endpointList = spawn('clairvoyance', [`${domain}`]);
+  const endpointSchema = spawn('clairvoyance', [`${endpoint}`]);
 
-  endpointList.stdout.on('data', function (data: Buffer) {
+  endpointSchema.stdout.on('data', function (data: Buffer) {
     res.write(`data: ${data.toString()}\n`);
     console.log(data.toString());
   });
 
-  endpointList.stderr.on('data', function (data: Buffer) {
+  endpointSchema.stderr.on('data', function (data: Buffer) {
     res.write(`data: ${data.toString()}\n`);
     console.log(data.toString());
   });
 
-  endpointList.on('exit', () => {
+  endpointSchema.on('exit', () => {
     console.log('end');
     res.send();
     res.end();

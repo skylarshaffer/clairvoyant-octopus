@@ -1,17 +1,20 @@
 import { CrawlSchema } from './CrawlSchema';
+import { GetSchema } from './GetSchema';
 
 type Props = {
-  endpoints: string[];
+  closedEndpoints: string[];
+  openEndpoints: string[];
 };
 
-export function CrawlResults({ endpoints }: Props) {
+export function CrawlResults({ closedEndpoints, openEndpoints }: Props) {
   return (
-    <section>
-      <div>
-        {endpoints.map((endpoint) => (
-          <CrawlSchema endpoint={endpoint} />
-        ))}
-      </div>
-    </section>
+    <div>
+      {closedEndpoints.map((endpoint) => (
+        <CrawlSchema endpoint={endpoint} />
+      ))}
+      {openEndpoints.map((endpoint) => (
+        <GetSchema endpoint={endpoint} />
+      ))}
+    </div>
   );
 }
