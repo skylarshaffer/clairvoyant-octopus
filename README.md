@@ -1,4 +1,4 @@
-# graph-test
+# graph-test (in development)
 
 A full-stack HTML/TS/CSS and Express/Node chaining of Goctopus and Clairvoyance that allows website owners to test their domain for common GraphQL vulnerabilities without installing anything.
 
