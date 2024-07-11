@@ -35,6 +35,8 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 
 - [ ] Summarize actions instead of raw output, opt-in output viewing
 
+- [ ] Chain my own third tool for Schema deduction (in development)
+
 - [ ] Migrate to serverless
 
 ## Tools
