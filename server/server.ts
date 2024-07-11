@@ -4,7 +4,7 @@ import express, { response } from 'express';
 import pg from 'pg';
 import { ClientError, errorMiddleware } from './lib/index.js';
 import { spawn } from 'child_process';
-import { readdirSync } from 'fs';
+import { existsSync } from 'fs';
 
 const db = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
@@ -48,9 +48,9 @@ app.get('/api/goctopus/:domain', (req, res) => {
   res.setHeader('Connection', 'keep-alive');
   res.setHeader('Content-Encoding', 'none');
   let goctopusPath = 'goctopus';
-  if (readdirSync('/home/ec2-user/go/bin/goctopus')) {
+  if (existsSync('/home/ec2-user/go/bin/goctopus')) {
     goctopusPath = '/home/ec2-user/go/bin/goctopus';
-  } else if (readdirSync('/home/dev/go/bin/goctopus')) {
+  } else if (existsSync('/home/dev/go/bin/goctopus')) {
     goctopusPath = '/home/dev/go/bin/goctopus';
   } else {
     console.log(
