@@ -24,8 +24,16 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 ## Roadmap
 
 - [x] Publish
+
+- [ ] Design front-end
+
 - [ ] Add CORS functionality to fix strict endpoint blocking
-- [ ] Replace backend with embedded .wasm
+
+- [ ] Reduce schema to downloadable file instead of text dump
+
+- [ ] Summarize actions instead of raw output, opt-in output viewing
+
+- [ ] Migrate to serverless
 
 ## Tools
 
