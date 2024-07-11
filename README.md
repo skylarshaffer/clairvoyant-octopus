@@ -1,6 +1,8 @@
-# graph-test (in development)
+# graph-test
 
-A full-stack HTML/TS/CSS and Express/Node chaining of Goctopus and Clairvoyance that allows website owners to test their domain for common GraphQL vulnerabilities without installing anything.
+http://ec2-13-57-0-146.us-west-1.compute.amazonaws.com/
+
+An ugly but functional full-stack HTML/TS/CSS and Express/Node chaining of Goctopus and Clairvoyance that allows website owners to test their domain for common GraphQL vulnerabilities without installing anything.
 
 ## Description
 
@@ -16,12 +18,12 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 
 ## Version History
 
-* 1.0 (not yet released)
+* 1.0
     * Initial Release
 
 ## Roadmap
 
-- [ ] Publish
+- [x] Publish
 - [ ] Add CORS functionality to fix strict endpoint blocking
 - [ ] Replace backend with embedded .wasm
 
