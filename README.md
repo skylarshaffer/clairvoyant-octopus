@@ -27,6 +27,8 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 
 - [ ] Design front-end
 
+- [ ] Developer support: Return to submodule-forward approach, reduce manual labor (package manager dependencies) in deploying and add more documentation
+
 - [ ] Add CORS functionality to fix strict endpoint blocking
 
 - [ ] Reduce schema to downloadable file instead of text dump
