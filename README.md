@@ -4,6 +4,8 @@ http://ec2-13-57-0-146.us-west-1.compute.amazonaws.com/
 
 An ugly but functional full-stack HTML/TS/CSS and Express/Node chaining of Goctopus and Clairvoyance that allows website owners to test their domain for common GraphQL vulnerabilities without installing anything.
 
+A good website to test with is lego.com!
+
 ## Description
 
 Testing a domain for GraphQL vulnerabilities has never been easier! Don't worry about installing multiple package managers, dependencies, and copying and pasting results, let graph-test do it for you!
@@ -15,6 +17,10 @@ Just enter your root domain (example.com) in the input field and submit. Watch g
 Each endpoint with schema introspection on will output the schema. Endpoints that are closed or leaking will be passed to Clairvoyance for further testing.
 
 Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and if it can piece togethere a schema, it will output it.
+
+## Troubleshooting
+
+- Make sure you enter the very root of your domain, without any fluff. For example, website.com.
 
 ## Version History
 
