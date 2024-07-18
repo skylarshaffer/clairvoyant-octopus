@@ -6,6 +6,10 @@ An ugly but functional full-stack HTML/TS/CSS and Express/Node chaining of Gocto
 
 A good website to test with is lego.com!
 
+## Demo
+
+![graph-test-demo](https://github.com/user-attachments/assets/56a73495-3b12-4c5d-bc33-b57aea923a17)
+
 ## Description
 
 Testing a domain for GraphQL vulnerabilities has never been easier! Don't worry about installing multiple package managers, dependencies, and copying and pasting results, let graph-test do it for you!
