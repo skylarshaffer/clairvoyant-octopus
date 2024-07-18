@@ -8,6 +8,8 @@ A good website to test with is lego.com!
 
 ## Demo
 
+https://github.com/user-attachments/assets/0cde5077-e403-4731-9d99-26e3b72c4753
+
 ![graph-test-demo](https://github.com/user-attachments/assets/56a73495-3b12-4c5d-bc33-b57aea923a17)
 
 ## Description
