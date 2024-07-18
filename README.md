@@ -67,4 +67,4 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 
 ## Acknowledgments
 
-* Made using LearningFuze's repository template and VSCode environment. Actively uses latest versions of goctopus and Clairvoyance on the backend.
+* Made using LearningFuze's repository template and VSCode environment. Uses latest versions of goctopus and Clairvoyance on the backend.
