@@ -31,6 +31,10 @@ Clairvoyance tests for any field suggestion or autocomplete vulnerabilities, and
 
 - [x] Publish
 
+- [ ] Fix domain formatting
+
+- [ ] Extract root domain from any url and just use that
+
 - [ ] Design front-end
 
 - [ ] Developer support: Return to submodule-forward approach, reduce manual labor (package manager dependencies) in deploying and add more documentation
